@@ -10,11 +10,11 @@ html {
 
 /* Body */
 body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 90%;
     margin: 15px auto;
     border: 4px solid rgb(95, 5, 5);
-    outline: 1px solid white;;
-
+    outline: 1px solid white;
     font-size: 100%;
     background-color:  white;;
 }
@@ -63,6 +63,8 @@ main section p {
 }
 
 main h1, main h2 { margin-left: .5em;}
+
+
 
 /* Navigation */
 
@@ -115,16 +117,30 @@ aside {
     padding: 2%;
     margin: 5% 2% 5% 0;
     background-color: beige;
+    border: 1px solid rgba(180, 180, 165, 0.507);
     
    }
 aside ul {
     list-style: none;
+    padding-left: 0;
  }
 
 aside span {
-    color: red;
+    color: rgb(150, 14, 14);
+    font-weight: bold;
    }
-aside ul li {padding: .2em 0;}
+aside ul li {
+    padding: .2em 0;
+}
+
+aside ul li a {
+    color: purple;
+    font-size: 1em;
+}
+aside h3 {
+    font-size: 1.2em;
+    font-weight: 550;
+}
 
 /* Footer */
 
@@ -202,16 +218,16 @@ footer a {
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 650px) {
     nav ul.top li a {font-size: .9em;}
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 560px) {
     nav ul.top li a {font-size: .85em;}
 }
 
 @media only screen and (max-width: 520px) {
-    nav ul.top li a {font-size: .8em;}
+    nav ul.top li a {font-size: .7em;}
     aside {
         display: flex;
         flex-direction: column;
@@ -220,6 +236,12 @@ footer a {
 
 /* Section forms */
 
+aside.form {
+    margin: 4em 6em 0 0;
+
+    
+
+}
 aside.form form label {
     float: left;
     text-align: right;
@@ -243,6 +265,7 @@ aside.form h2, aside.form h3 {
 
 aside.form h2 {
     color: rgb(150, 14, 14);
+    font-weight: 600;
 }
 
 aside.form h3 {
@@ -310,4 +333,15 @@ div.port:hover {
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+div.card-group {
+    clear: both;
+    padding: 0 1em;
+}
+
+/* Other */
+section.alert {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
