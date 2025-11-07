@@ -345,3 +345,27 @@ section.alert {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+article {
+    width: 65%;
+    float: left;
+}
+
+article p {
+    margin-left: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+article h1 {
+    text-align: center;
+    color: rgba(120, 7, 7, 0.82);
+    font-weight: bold;
+}
+article h5 {
+    margin-left: 1em;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    padding-top: 1em;
+    font-style: italic;
+}
